@@ -1,0 +1,243 @@
+# Post #6 — ZenRay Dictate (technique, carrousel 4 slides)
+
+Publié le : à compléter
+Plateforme : Instagram (carrousel 4 slides, 4:5)
+Visuels : `zenray-dictate/docs/social/tmp/out/slide-1.png` à `slide-4.png`
+Dépôt : https://github.com/matthieuhuguet/zenray-dictate
+
+---
+
+## Légende PUBLIABLE (2026-08-12) — 1996 caractères, ordre EN / 日本語 / FR
+
+Version à copier telle quelle.
+
+```
+🇬🇧 EN/🇯🇵 日本語/🇫🇷 FR
+
+A painter doesn't add paint to make something pretty. He uses colour to make something appear or disappear. Code is similar. You need a function, you create it. You don't, you erase what's redundant. Brushstroke after brushstroke. And a painter doesn't have to create in order to reveal: subtracting, or inverting, is enough.
+
+The way Parakeet or Wispr Flow do it. I wanted dictation that actually works, everywhere on my devices. Those models still make plenty of errors, and the paid ones keep the monopoly. So I took apart the one component I cared about in ChatGPT: the dictation.
+
+Fn brings up a small bar. Cmd+D starts and stops. The text lands on the clipboard.
+
+Free, on the account you already have.
+
+---
+
+画家はきれいに見せるために絵の具を足すのではない。色を使って、何かを現したり消したりする。コードも似ている。関数が必要なら作る。不要なら、余分を消す。筆跡ひとつ、またひとつ。そして画家は、現すために作る必要はない。引くか、反転させればいい。
+
+ParakeetやWispr Flowのように。どの端末でもちゃんと使える音声入力がほしかった。ああいうモデルはまだ誤りが多く、有料のものが優位を保ったままだ。だからChatGPTから、必要な部分だけを取り出した。音声入力そのものを。
+
+Fnで小さなバーが出る。Cmd+Dで開始と停止。文字はクリップボードに入る。
+
+無料、すでに持っているアカウントで。
+
+---
+
+Un peintre n'ajoute pas de la peinture pour faire quelque chose de joli. Il utilise les couleurs pour faire apparaître ou disparaître quelque chose. Le code, c'est similaire. On a besoin d'une fonction, on la crée. On n'en a pas besoin, on efface le superflu. Coup de pinceau après coup de pinceau. Et un peintre n'est pas obligé de créer pour faire apparaître : il lui suffit de soustraire, ou d'inverser.
+
+À la manière de Parakeet ou de Wispr Flow. Je voulais une dictée efficace partout sur mes appareils. Ces modèles font encore beaucoup d'erreurs, et les solutions payantes gardent le monopole. J'ai donc désassemblé le seul composant qui m'intéressait dans ChatGPT : la dictée vocale.
+
+Fn fait apparaître une petite barre. Cmd+D démarre et arrête. Le texte arrive dans le presse-papier.
+
+Gratuit, sur le compte que vous avez déjà.
+
+Open source, MIT
+github.com/matthieuhuguet/zenray-dictate
+
+#opensource #macos #dictation #speechtotext #buildinpublic
+```
+
+### Ce qui a été coupé pour tenir, et pourquoi
+
+Instagram plafonne à 2200 caractères, Matthieu vise 2000. Un post trilingue
+divise le budget par trois, soit environ 660 caractères par langue. La version
+longue faisait 3623 pour les trois blocs, il fallait donc retirer 45 pour cent.
+
+Coupés :
+
+- Le paragraphe « Pourquoi pas une application existante », le plus long, dont
+  l'argument survit en plus court dans « ces modèles font encore beaucoup
+  d'erreurs ».
+- Le paragraphe sur le modèle, stack GPT Realtime et repli 4o. Il reste dans le
+  README, où il a davantage sa place.
+- « celle qui transforme la voix en texte », la mention du mode vocal utilisé
+  pour récupérer le texte, le Cmd+V, et « un bug reste ouvert ».
+- La licence et le lien ne sont plus répétés dans chaque langue, ils figurent
+  une seule fois à la fin et servent les trois.
+
+Gardée intacte : la métaphore du peintre, qui porte le post.
+
+Option non retenue mais valable : le français seul tenait sans aucune coupe,
+1608 caractères plus les hashtags. C'est le trilingue qui force le sacrifice.
+
+À savoir : Instagram ne rend pas les liens cliquables dans une légende. Le lien
+sert de référence à recopier, la bio reste le seul endroit cliquable.
+
+---
+
+## Légende longue du 2026-08-12 (trop longue pour Instagram, conservée comme référence) — version de Matthieu, corrections de grammaire uniquement
+
+🇫🇷 FR
+
+Un peintre n'ajoute pas de la peinture pour faire quelque chose de joli. Il utilise les couleurs pour faire apparaître ou disparaître quelque chose. Le code, c'est similaire. On a besoin d'une fonction, on la crée. On n'a pas besoin de quelque chose, on efface le superflu. On reste simple, fonction après fonction, coup de pinceau après coup de pinceau. Et un peintre n'est pas obligé de créer pour faire apparaître : il lui suffit de soustraire, ou d'inverser.
+
+À la manière de Parakeet ou de Wispr Flow. Je voulais une solution de dictée efficace partout sur mes appareils. Ces modèles font encore beaucoup d'erreurs, et les solutions payantes gardent le monopole. J'utilisais déjà le mode vocal de ChatGPT rien que pour en récupérer le texte. J'ai donc construit un hack qui désassemble le seul composant qui m'intéressait : la dictée vocale, celle qui transforme la voix en texte.
+
+Fn fait apparaître une petite barre. Cmd+D démarre et arrête. Le texte arrive dans le presse-papier, et Cmd+V le dépose là où j'écrivais.
+
+Pourquoi pas une application existante. En français, les modèles locaux basculent sans cesse en anglais au milieu d'une phrase. Le japonais n'est souvent pas géré du tout. Je dicte avec ça tous les jours, dans les deux langues, avec très peu d'erreurs.
+
+Ça ne coûte rien. Ça tourne sur le compte que vous avez déjà, en mode gratuit ou Plus, sans API de transcription à payer.
+
+Sur le modèle : c'est presque certainement la stack audio GPT Realtime d'OpenAI, soit la génération 4o en fallback.
+
+Open source, licence MIT. Lien dans le dépôt. Un bug reste ouvert, l'aide est bienvenue.
+
+---
+
+🇬🇧 EN
+
+A painter doesn't add paint to make something pretty. He uses colour to make something appear or disappear. Code is similar. You need a function, you create it. You don't need something, you erase what's redundant. You stay simple, function after function, brushstroke after brushstroke. And a painter doesn't have to create in order to reveal: subtracting, or inverting, is enough.
+
+The way Parakeet or Wispr Flow do it. I wanted dictation that actually works, everywhere on my devices. Those models still make plenty of errors, and the paid ones keep the monopoly. I was already using ChatGPT's voice mode just to get the text out of it. So I built a hack that takes apart the one component I cared about: the dictation, the part that turns voice into text.
+
+Fn brings up a small bar. Cmd+D starts and stops. The text lands on the clipboard, and Cmd+V drops it wherever I was typing.
+
+Why not an existing app. In French, local models keep flipping to English mid-sentence. Japanese often isn't handled at all. I dictate with this every day, in both languages, with very few errors.
+
+It costs nothing. It runs on the account you already have, on the free tier or Plus, with no transcription API to pay for.
+
+On the model: almost certainly OpenAI's GPT Realtime audio stack, with the 4o generation as fallback.
+
+Open source, MIT licence. Link in the repo. One bug is still open, and help is welcome.
+
+---
+
+🇯🇵 日本語
+
+画家はきれいに見せるために絵の具を足すのではない。色を使って、何かを現したり消したりする。コードも似ている。関数が必要なら、それを作る。不要なものがあれば、余分を消す。関数ひとつ、筆跡ひとつ、常にシンプルに。そして画家は、現すために作る必要はない。引くか、反転させればいい。
+
+ParakeetやWispr Flowのように。どの端末でもちゃんと使える音声入力がほしかった。ああいうモデルはまだ誤りが多く、有料のものが優位を保ったままだ。もともとChatGPTの音声モードを、テキストを取り出すためだけに使っていた。だから、自分に必要な部分だけを取り出すハックを作った。声を文字に変える、その音声入力の部分だけを。
+
+Fnで小さなバーが出る。Cmd+Dで開始と停止。文字はクリップボードに入り、Cmd+Vで書いていた場所に貼れる。
+
+既存のアプリを使わなかった理由。フランス語ではローカルモデルが文の途中で英語に切り替わる。日本語は対応していないことが多い。毎日、両方の言語で使っているが、間違いはほとんどない。
+
+費用はかからない。すでに持っているアカウントで動く。無料でもPlusでもよく、文字起こしAPIの支払いは不要。
+
+モデルについて。ほぼ確実にOpenAIのGPT Realtimeの音声スタックで、フォールバックが4o世代。
+
+オープンソース、MITライセンス。リンクはリポジトリに。バグがひとつ残っている。協力歓迎。
+
+---
+
+#opensource #macos #dictation #speechtotext #buildinpublic
+
+---
+
+### Les cinq corrections apportées, et rien d'autre
+
+1. Espace parasite en tête du deuxième paragraphe.
+2. « de dictée de efficace » → « de dictée efficace ».
+3. « sur mes appareils, Ces modèles » → point à la place de la virgule.
+4. « tous les jours  dans les deux langues » → virgule et espace double.
+5. « Ça tourne un le compte » → « Ça tourne sur le compte », et le « ou » redoublé réduit.
+
+Conservés tels quels parce que ce sont ses mots : « en fallback », « la stack audio ».
+
+### Erreur commise deux fois ce jour-là, règle écrite dans le skill
+
+J'avais réintroduit la ligne d'ouverture « Il faut coder comme un peintre » qu'il avait supprimée, et rétabli mon ordre de phrases là où il avait remonté « à la manière de Parakeet ou de Wispr Flow » en tête. Une suppression est une suppression, un déplacement est un déplacement. Règle inscrite dans le skill `zenray-social-media`, section « Texte renvoyé par Matthieu ».
+
+---
+
+## Légende, version intermédiaire du 2026-08-11 (obsolète)
+
+Il faut coder comme un peintre.
+
+Un peintre n'ajoute pas de la peinture pour faire quelque chose de joli. Il utilise les couleurs pour faire apparaître ou disparaître quelque chose. Le code, c'est pareil. On a besoin d'une fonction, on la crée. On n'a pas besoin de quelque chose, on le supprime. On reste simple, fonction après fonction, coup de pinceau après coup de pinceau. Et un peintre n'est pas obligé de créer pour faire apparaître : il lui suffit de soustraire, ou d'inverser.
+
+Je voulais la dictée de ChatGPT partout sur mon Mac, à la manière de Parakeet ou de Wispr Flow, et pas seulement dans un onglet. Ces modèles font encore beaucoup d'erreurs, et les solutions payantes gardent le monopole. J'utilisais déjà le mode vocal de ChatGPT rien que pour en récupérer le texte. J'ai donc construit un hack qui désassemble le seul composant qui m'intéressait : la dictée vocale, celle qui transforme la voix en texte.
+
+Fn fait apparaître une petite barre. Cmd+D démarre et arrête. Le texte arrive dans le presse-papier, et Cmd+V le dépose là où j'écrivais.
+
+Pourquoi pas une application existante. En français, les modèles locaux basculent sans cesse en anglais au milieu d'une phrase. Le japonais n'est souvent pas géré du tout. Je dicte avec ça tous les jours depuis la sortie de GPT-5.6, dans les deux langues, avec très peu d'erreurs.
+
+Ça ne coûte rien. Ça tourne sur le compte ChatGPT que vous avez déjà, gratuit ou Plus, sans API de transcription à payer.
+
+Sur le modèle : c'est presque certainement la pile audio GPT Realtime d'OpenAI, soit la génération 4o, soit la plus récente. OpenAI ne le confirme pas, donc cette partie reste une déduction. Le reste est un usage quotidien, pas un résultat classé.
+
+Open source, licence MIT. Lien dans le dépôt. Un bug reste ouvert, l'aide est bienvenue.
+
+#opensource #macos #dictation #speechtotext #buildinpublic
+
+Statut : version française arrêtée. Anglais et japonais à propager depuis celle-ci quand Matthieu le demandera, le français faisant foi comme sur les posts #4 et #5.
+
+Deux corrections de fond apportées à sa dictée, à conserver dans les traductions : il avait écrit « text to speech » là où la dictée fait l'inverse, speech to text ; et « Whispr Flow » s'écrit Wispr Flow, avec un seul s.
+
+---
+
+## Légende trilingue, version précédente (2026-08-11, avant réécriture)
+
+🇬🇧 EN/🇫🇷 FR/🇯🇵 日本語
+
+I wanted ChatGPT's dictation everywhere on my Mac, not just inside a browser tab. So I built it.
+
+Fn shows a small bar. Cmd+D starts and stops. The text lands on the clipboard, and Cmd+V drops it wherever I was typing.
+
+Why not one of the existing apps. In French, local models keep flipping to English mid-sentence. Japanese is often not supported at all. I have dictated with this every day since GPT-5.6 shipped, in both languages, and hit very few errors.
+
+It costs nothing. It runs on the ChatGPT account you already have, free or Plus, with no transcription API to pay for.
+
+On the model: it is almost certainly OpenAI's GPT Realtime audio stack, either the 4o generation or the newer one. OpenAI does not confirm it, so that part is an informed guess. The rest is daily use, not a ranked result.
+
+Open source, MIT. Link in the repo. One bug is still open, and help is welcome.
+
+---
+
+Je voulais la dictée de ChatGPT partout sur mon Mac, pas seulement dans un onglet. Je l'ai donc construite.
+
+Fn fait apparaître une petite barre. Cmd+D démarre et arrête. Le texte arrive dans le presse-papier, et Cmd+V le dépose là où j'écrivais.
+
+Pourquoi pas une application existante. En français, les modèles locaux basculent sans cesse en anglais au milieu d'une phrase. Le japonais n'est souvent pas géré du tout. Je dicte avec ça tous les jours depuis la sortie de GPT-5.6, dans les deux langues, avec très peu d'erreurs.
+
+Ça ne coûte rien. Ça tourne sur le compte ChatGPT que vous avez déjà, gratuit ou Plus, sans API de transcription à payer.
+
+Sur le modèle : c'est presque certainement la pile audio GPT Realtime d'OpenAI, soit la génération 4o, soit la plus récente. OpenAI ne le confirme pas, donc cette partie reste une déduction. Le reste est un usage quotidien, pas un résultat classé.
+
+Open source, licence MIT. Lien dans le dépôt. Un bug reste ouvert, l'aide est bienvenue.
+
+---
+
+Macでどこでもボイス入力を使いたかった。ブラウザのタブの中だけでは足りない。だから自分で作った。
+
+Fnで小さなバーが出る。Cmd+Dで開始と停止。文字はクリップボードに入り、Cmd+Vで書いていた場所に貼れる。
+
+既存のアプリを使わなかった理由。フランス語ではローカルモデルが文の途中で英語に切り替わる。日本語は対応していないことが多い。GPT-5.6が出てから毎日、両方の言語で使っているが、間違いはほとんどない。
+
+費用はかからない。すでに持っているChatGPTアカウントで動く。無料でもPlusでもよく、文字起こしAPIの支払いは不要。
+
+モデルについて。ほぼ確実にOpenAIのGPT Realtimeの音声スタックで、4o世代か、より新しい方のどちらか。OpenAIは明言していないので、そこは推測。残りは日々の使用であって、測定された順位ではない。
+
+オープンソース、MITライセンス。リンクはリポジトリに。バグがひとつ残っている。協力歓迎。
+
+---
+
+#opensource #macos #dictation #speechtotext #buildinpublic
+
+---
+
+## Notes de fabrication
+
+Chiffres gardés : aucun chiffre d'inventaire, conformément à la consigne du
+2026-08-06. Les deux seules valeurs présentes sont des raccourcis clavier, donc
+des instructions d'usage, pas des décomptes.
+
+Réserve conservée dans les trois langues : le nom du modèle reste inconnu. Ce
+paragraphe a d'abord été écrit comme un aveu de faiblesse, puis remplacé le
+2026-08-11 par le verdict d'usage quotidien, sur demande de Matthieu, la réserve
+étant réduite à ce qui reste réellement invérifiable.
+
+Le bug ouvert mentionné à la fin est celui documenté dans le README : Fn ne
+ramène pas toujours la fenêtre après une perte de focus.
